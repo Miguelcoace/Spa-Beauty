@@ -8,4 +8,11 @@
     justify-content: center;
     align-items: center;
     border-radius: 32px;
+
+    &:hover {
+        font-size: 24px;
+        transition: font-size 0.3s ease;
+        background-color: $bla;
+        color: $wh;
+    }
 }

@@ -11,6 +11,7 @@ header.header {
         width: 100%;
         height: 700px;
         padding: 80px 66px 0px 160px;
+        z-index: 3;
         background: linear-gradient(
             to right,
             $lgry 0px,
@@ -66,6 +67,21 @@ header.header {
                     letter-spacing: 0%;
                     gap: 8px;
                     color: $dblue;
+                    z-index: 3;
+
+                    &:hover {
+                        font-size: 12px;
+                        transition: font-size 0.3s ease;
+                        
+                        img {
+                            width: 64px;
+                            height: 64px;
+                            transition: width 0.3s ease, height 0.3s ease;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 8px;
+                        }
+                    }
 
                     img {
                         justify-content: center;
@@ -74,7 +90,7 @@ header.header {
                         height: 48px;
                         padding: 12px;
                         background-color: $wh;
-                        border-radius: 32px;;
+                        border-radius: 32px;
                     }
                 }
             }

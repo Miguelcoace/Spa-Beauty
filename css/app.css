@@ -14,6 +14,12 @@
   align-items: center;
   border-radius: 32px;
 }
+.button:hover {
+  font-size: 24px;
+  transition: font-size 0.3s ease;
+  background-color: #070D15;
+  color: #FFFFFF;
+}
 
 nav.navbar {
   width: 100%;
@@ -40,11 +46,17 @@ nav.navbar ul.links {
   height: 27px;
   justify-content: space-between;
   gap: 56px;
+  z-index: 3;
 }
 nav.navbar ul.links li {
   font-weight: 400;
   font-size: 18px;
   list-style: none;
+}
+nav.navbar ul.links li:hover {
+  font-size: 24px;
+  transition: font-size 0.3s ease;
+  color: #909090;
 }
 nav.navbar ul.links li a {
   text-decoration: none;
@@ -65,10 +77,18 @@ nav.navbar section.vectors {
   height: 32px;
   display: flex;
   justify-content: space-between;
+  z-index: 3;
 }
 nav.navbar section.vectors img {
   width: 32px;
   height: 32px;
+}
+nav.navbar section.vectors img:hover {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  transition: width 0.3s ease, height 0.3s ease;
+  align-self: center;
 }
 nav.navbar aside.registration {
   margin-left: 66px;
@@ -77,6 +97,10 @@ nav.navbar aside.registration {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 3;
+}
+nav.navbar aside.registration article:hover {
+  cursor: pointer;
 }
 nav.navbar aside.registration article.signin {
   width: 72px;
@@ -94,6 +118,12 @@ nav.navbar aside.registration article.signin a {
   line-height: 40px;
   font-size: 18px;
 }
+nav.navbar aside.registration article.signin:hover a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #FFFFFF;
+  transition: font-size 0.3s ease;
+}
 nav.navbar aside.registration article.signup {
   width: 149px;
 }
@@ -108,6 +138,7 @@ header.header section.hero {
   width: 100%;
   height: 700px;
   padding: 80px 66px 0px 160px;
+  z-index: 3;
   background: linear-gradient(to right, #FAF8F5 0px, #FAF8F5 1285px, #A9D6CB 1286px, #A9D6CB 1920px);
 }
 header.header section.hero article.hero_title {
@@ -154,6 +185,19 @@ header.header section.hero article.hero_title aside.links a.watch {
   letter-spacing: 0%;
   gap: 8px;
   color: #264065;
+  z-index: 3;
+}
+header.header section.hero article.hero_title aside.links a.watch:hover {
+  font-size: 12px;
+  transition: font-size 0.3s ease;
+}
+header.header section.hero article.hero_title aside.links a.watch:hover img {
+  width: 64px;
+  height: 64px;
+  transition: width 0.3s ease, height 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
 }
 header.header section.hero article.hero_title aside.links a.watch img {
   justify-content: center;
@@ -266,4 +310,7 @@ body {
   overflow-x: hidden;
   background-color: #FFFFFF;
   color: #264065;
+}
+body:hover {
+  cursor: default;
 }/*# sourceMappingURL=app.css.map */

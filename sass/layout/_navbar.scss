@@ -33,11 +33,18 @@ nav.navbar {
             height: 27px;
             justify-content: space-between;
             gap: 56px;
+            z-index: 3;
 
             li {
                 font-weight: 400;
                 font-size: 18px;
                 list-style: none;
+
+                &:hover {
+                    font-size: 24px;
+                    transition: font-size 0.3s ease;
+                    color: $gry;
+                }
 
                 a {
                     text-decoration: none;
@@ -64,11 +71,21 @@ nav.navbar {
             height: 32px;
             display: flex;
             justify-content: space-between;
+            z-index: 3;
 
             img {
                 width: 32px;
                 height: 32px;
+
+                &:hover {
+                    cursor: pointer;
+                    width: 48px;
+                    height: 48px;
+                    transition: width 0.3s ease, height 0.3s ease;
+                    align-self: center;
+                }
             }
+
         }
 
         aside.registration {
@@ -78,6 +95,11 @@ nav.navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            z-index: 3;
+
+            article:hover {
+                cursor: pointer;
+            }
 
             article.signin {
                 width: 72px;
@@ -93,6 +115,15 @@ nav.navbar {
                     font-family: $nunito-sans-font;
                     line-height: 40px;
                     font-size: 18px;
+                }
+
+                &:hover {
+                    a {
+                        text-decoration: none;
+                        font-size: 22px;
+                        color: $wh;
+                        transition: font-size 0.3s ease;
+                    }
                 }
             }
 
