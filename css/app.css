@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  height: 60px;
+  background-color: #264065;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+}
+
+nav.navbar {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 30px 160px;
+  background: linear-gradient(to right, #FAF8F5 0px, #FAF8F5 1285px, #A9D6CB 1286px, #A9D6CB 1920px);
+}
+nav.navbar h2.webaName {
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 0%;
+  width: 212px;
+  height: 54px;
+}
+nav.navbar h2.webaName span {
+  color: #A9D6CB;
+}
+nav.navbar ul.links {
+  margin-left: 164px;
+  display: flex;
+  width: 558px;
+  height: 27px;
+  justify-content: space-between;
+  gap: 56px;
+}
+nav.navbar ul.links li {
+  font-weight: 400;
+  font-size: 18px;
+  list-style: none;
+}
+nav.navbar ul.links li a {
+  text-decoration: none;
+  color: #264065;
+}
+nav.navbar ul.links li a.vector {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+nav.navbar ul.links li a.vector img {
+  width: 10px;
+  height: 6px;
+}
+nav.navbar section.vectors {
+  margin-left: 251px;
+  width: 96px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+nav.navbar section.vectors img {
+  width: 32px;
+  height: 32px;
+}
+nav.navbar aside.registration {
+  margin-left: 66px;
+  width: 253px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav.navbar aside.registration article.signin {
+  width: 72px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav.navbar aside.registration article.signin a {
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  text-underline-offset: 2px;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 40px;
+  font-size: 18px;
+}
+nav.navbar aside.registration article.signup {
+  width: 149px;
+}
+
+header.header {
+  width: 1920px;
+  height: 1080px;
+}
+header.header section.hero {
+  display: grid;
+  grid-template-areas: "hero_title hero_comments" "hero_items hero_comments";
+  width: 100%;
+  height: 700px;
+  padding: 80px 66px 0px 160px;
+  background: linear-gradient(to right, #FAF8F5 0px, #FAF8F5 1285px, #A9D6CB 1286px, #A9D6CB 1920px);
+}
+header.header section.hero article.hero_title {
+  grid-area: hero_title;
+  width: 809px;
+  height: 388px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+header.header section.hero article.hero_title h1.title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0%;
+}
+header.header section.hero article.hero_title p.subtitle {
+  width: 760px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: #909090;
+}
+header.header section.hero article.hero_title aside.links {
+  width: 452px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.header section.hero article.hero_title aside.links a.booking {
+  width: 180px;
+  text-decoration: none;
+}
+header.header section.hero article.hero_title aside.links a.watch {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 60px;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0%;
+  gap: 8px;
+  color: #264065;
+}
+header.header section.hero article.hero_title aside.links a.watch img {
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border-radius: 32px;
+}
+header.header section.hero aside.hero_logo {
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 1005px;
+  opacity: 5%;
+  width: 567px;
+  height: 567px;
+}
+header.header section.hero article.hero_image {
+  position: absolute;
+  width: 1639px;
+  height: 1229px;
+  margin: -200px 0px 0px 161px;
+}
+header.header section.hero aside.items {
+  grid-area: hero_items;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 643px;
+  height: 284px;
+  margin-top: 90px;
+  margin-bottom: -142px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  gap: 72px;
+  padding: 32px;
+}
+header.header section.hero aside.items article.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 145px;
+  height: 220px;
+}
+header.header section.hero aside.items article.item img {
+  width: 72px;
+  height: 72px;
+}
+header.header section.hero aside.items article.item h3.title {
+  font-weight: 500;
+  font-size: 36px;
+  letter-spacing: 0%;
+}
+header.header section.hero aside.items article.item p.paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0%;
+  color: #909090;
+  text-align: center;
+}
+header.header section.hero aside.feedback {
+  grid-area: hero_comments;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 545px;
+  height: 559px;
+  margin-left: 265px;
+  margin-top: 235px;
+  z-index: 2;
+}
+header.header section.hero aside.feedback article {
+  width: 405px;
+  height: 247px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: rgba(255, 255, 255, 0.5);
+  filter: blur(16);
+  border-radius: 16px;
+  padding: 24px;
+  gap: 8px;
+}
+header.header section.hero aside.feedback article img {
+  width: 32px;
+  height: 21px;
+  color: #264065;
+}
+header.header section.hero aside.feedback article p.comment {
+  font-size: 18px;
+  letter-spacing: 0%;
+  color: #070D15;
+}
+header.header section.hero aside.feedback article p.name {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0%;
+  color: #264065;
+}
+header.header section.hero aside.feedback article:first-child {
+  align-self: flex-end;
+}
+
+html * {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  color: #264065;
+}/*# sourceMappingURL=app.css.map */

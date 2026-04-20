@@ -1,0 +1,191 @@
+@use '../abstracts/variables' as *;
+
+header.header {
+    width: 1920px;
+    height: 1080px;
+
+    section.hero {
+        display: grid;
+        grid-template-areas: "hero_title hero_comments"
+                             "hero_items hero_comments";
+        width: 100%;
+        height: 700px;
+        padding: 80px 66px 0px 160px;
+        background: linear-gradient(
+            to right,
+            $lgry 0px,
+            $lgry 1285px,
+            $cy 1286px,
+            $cy 1920px,
+        );
+
+        article.hero_title {
+            grid-area: hero_title;
+            width: 809px;
+            height: 388px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            h1.title {
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 80px;
+                letter-spacing: 0%;
+            }
+
+            p.subtitle {
+                width: 760px;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 40px;
+                letter-spacing: 0%;
+                color: $gry;
+            }
+
+            aside.links {
+                width: 452px;
+                height: 60px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                a.booking {
+                    width: 180px;
+                    text-decoration: none;
+                }
+
+                a.watch {
+                    display: flex;
+                    align-items: center;
+                    width: 240px;
+                    height: 60px;
+                    text-decoration: none;
+                    font-size: 18px;
+                    letter-spacing: 0%;
+                    gap: 8px;
+                    color: $dblue;
+
+                    img {
+                        justify-content: center;
+                        align-items: center;
+                        width: 48px;
+                        height: 48px;
+                        padding: 12px;
+                        background-color: $wh;
+                        border-radius: 32px;;
+                    }
+                }
+            }
+        }
+
+        aside.hero_logo {
+            position: absolute;
+            margin-top: -80px;
+            margin-left: 1005px;
+            opacity: 5%;
+            width: 567px;
+            height: 567px;
+        }
+
+        article.hero_image {
+            position: absolute;
+            width: 1639px;
+            height: 1229px;
+            margin: -200px 0px 0px 161px;
+        }
+
+        aside.items {
+            grid-area: hero_items;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 643px;
+            height: 284px;
+            margin-top: 90px;
+            margin-bottom: -142px;
+            background-color: $wh;
+            border-radius: 16px;
+            gap: 72px;
+            padding: 32px;
+
+            article.item {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 145px;
+                height: 220px;
+
+                img {
+                    width: 72px;
+                    height: 72px;
+                }
+
+                h3.title {
+                    font-weight: 500;
+                    font-size: 36px;
+                    letter-spacing: 0%;
+                }
+
+                p.paragraph {
+                    font-weight: 400;
+                    font-size: 18px;
+                    letter-spacing: 0%;
+                    color: $gry;
+                    text-align: center;
+                }
+            }
+        }
+
+        aside.feedback {
+            grid-area: hero_comments;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 545px;
+            height: 559px;
+            margin-left: 265px;
+            margin-top: 235px;
+            z-index: 2;
+            
+            article {
+                width: 405px;
+                height: 247px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                background-color: rgba(255, 255, 255, 0.5);
+                filter: blur(16);
+                border-radius: 16px;
+                padding: 24px;
+                gap: 8px;
+
+                img {
+                    width: 32px;
+                    height: 21px;
+                    color: $dblue;
+                }
+
+                p.comment {
+                    font-size: 18px;
+                    letter-spacing: 0%;
+                    color: $bla;
+                }
+
+                p.name {
+                    font-weight: 700;
+                    font-size: 18px;
+                    letter-spacing: 0%;
+                    color: $dblue;
+                }
+
+                &:first-child {
+                    align-self: flex-end;
+                }
+            }
+
+        }
+    }
+}

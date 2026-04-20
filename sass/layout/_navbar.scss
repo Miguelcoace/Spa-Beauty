@@ -1,0 +1,103 @@
+@use '../abstracts/variables' as *;
+
+nav.navbar {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        padding: 30px 160px;
+        background: linear-gradient(
+            to right,
+            $lgry 0px,
+            $lgry 1285px,
+            $cy 1286px,
+            $cy 1920px,
+        );
+
+        h2.webaName {
+            font-weight: 600;
+            font-size: 36px;
+            letter-spacing: 0%;
+            width: 212px;
+            height: 54px;
+
+            span {
+                color: $cy;
+            }
+        }
+
+        ul.links {
+            margin-left: 164px;
+            display: flex;
+            width: 558px;
+            height: 27px;
+            justify-content: space-between;
+            gap: 56px;
+
+            li {
+                font-weight: 400;
+                font-size: 18px;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: $dblue;
+
+                    &.vector {
+                        display: flex;
+                        gap: 8px;
+                        align-items: center;
+
+                        img {
+                            width: 10px;
+                            height: 6px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        section.vectors {
+            margin-left: 251px;
+            width: 96px;
+            height: 32px;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        aside.registration {
+            margin-left: 66px;
+            width: 253px;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            article.signin {
+                width: 72px;
+                height: 56px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    text-decoration: underline;
+                    text-decoration-skip-ink: auto;
+                    text-underline-offset: 2px;
+                    font-family: $nunito-sans-font;
+                    line-height: 40px;
+                    font-size: 18px;
+                }
+            }
+
+            article.signup {
+                width: 149px;
+            }
+        }
+}

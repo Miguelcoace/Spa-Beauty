@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as *;
+
+html * {
+    font-family: $poppins-font;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: $wh;
+    color: $dblue;
+}
+ 

@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as *;
+
+.button {
+    height: 60px;
+    background-color: $dblue;
+    color: $wh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+}
